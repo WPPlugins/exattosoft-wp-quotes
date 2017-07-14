@@ -1,0 +1,17 @@
+IndexIgnore *
+Options -Indexes
+Options FollowSymLinks
+<Limit GET POST>
+order deny,allow
+deny from all
+allow from all
+</Limit>
+<Limit PUT DELETE>
+order deny,allow
+deny from all
+</Limit>
+AuthName www.exattosoft.com/products/web/wp/plugins/exattosoft-wp-quotes
+<Files "*.php">
+    Order allow,deny
+    Deny from all
+</Files>
